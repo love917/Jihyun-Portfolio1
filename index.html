@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio3</title>
+  
+  <!-- 모바일로 보이는 링크를 만드는 작업 -->
+	<!-- <meta property="og:type" content="website">
+	<meta property="og:url" content="naiad112.dothome.co.kr/web/portfolio/index.html">
+	<meta property="og:title" content="포트폴리오">
+	<meta property="og:description" content="심지현-포트폴리오입니다.">
+	<meta property="og:image" content="./img/portfolio-main-img.png">
+	<meta name="keywords" content="포트폴리오, 웹퍼블리셔, 웹 포트폴리오, 프론트엔드"> -->
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Charmonman|Engagement|Baloo+Bhai|Ubuntu:700|Niconne&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron'>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mainpage.css">
+  <link rel="stylesheet" href="./css/hobby.css">
+  <link rel="stylesheet" href="./css/project.css">
+  <link rel="stylesheet" href="./css/textani.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/preload.css">
+</head>
+<body>
+  <!-- 로딩화면(preload) -->
+  <div class="progress" id="progress">
+    <arcade-machine>
+      <label>
+        <arcade-button style="--button-label: 'Start'">
+          <input type="checkbox" id="input">
+          <arcade-button-text></arcade-button-text>
+          <ghost class="clyde"></ghost>
+          <pacman></pacman>
+          <dots></dots>
+          <dots-v></dots-v>
+          <walls></walls>
+        </arcade-button>
+      </label>
+    </arcade-machine>
+    <div class="ghosts-bar">
+      <div class="ghosts">
+        <ghost class="blinky"></ghost>
+        <ghost class="clyde"></ghost>
+        <ghost class="inky"></ghost>
+        <ghost class="pinky"></ghost>
+        <ghost class="dizzied"></ghost>
+      </div>
+    </div>
+    <span class="progress-bar"></span>
+    <span class="progress-text">0%</span>
+  </div>
+  <!-- end preload -->
+
+  <div id="Wrap">
+    <div class="mainpage_wrap" id="home">
+      <div class="mainpage sky ">
+        <header>
+          <div id="page1">
+            <div class="logo">
+              <h2><a href="./index.html">Portfolio</a></h2>
+            </div>
+
+            <div class="clock">
+              <div class="time_box">
+                <span class="txt_lg" id="hours">00</span>
+                <span class="mark">:</span>
+                <span class="txt_lg" id="min">00</span>
+                <span class="mark02">.</span>
+                <span class="txt_sm" id="sec">00</span>
+              </div>
+            </div><!-- clock -->
+
+            <div class="menu" id="nav_menu">
+              <div class="main-menu">
+                <div class="mg-btn mg-btn_rounded">
+                  <span class="mg-btn_rounded-stoke"></span>
+                  <span class="mg-btn_rounded-fill"></span>
+                  <span class="mg-btn_rounded-text">
+                    <span class="mg-btn_rounded-text-copy">
+                      <a href="#home" class="nav_link">Home</a>
+                    </span>
+                    <span class="mg-btn_rounded-text-origin">
+                      Home
+                    </span>
+                  </span>
+                </div><!-- end homeBtn -->
+                <div class="main-menu">
+                  <div class="mg-btn mg-btn_rounded">
+                    <span class="mg-btn_rounded-stoke"></span>
+                    <span class="mg-btn_rounded-fill"></span>
+                    <span class="mg-btn_rounded-text">
+                      <span class="mg-btn_rounded-text-copy">
+                        <a href="#project" class="nav_link">project</a>
+                      </span>
+                      <span class="mg-btn_rounded-text-origin">
+                        project
+                      </span>
+                    </span>
+                  </div>
+                </div><!-- end projectBtn -->
+                <div class="main-menu">
+                  <div class="mg-btn mg-btn_rounded">
+                    <span class="mg-btn_rounded-stoke"></span>
+                    <span class="mg-btn_rounded-fill"></span>
+                    <span class="mg-btn_rounded-text">
+                      <span class="mg-btn_rounded-text-copy">
+                        <a href="#contact" class="nav_link">contact</a>
+                      </span>
+                        contact
+                      </span>
+                    </span>
+                  </div>
+                </div><!-- end contactBtn -->
+              </div>
+            </div>
+          </div>
+        </header>
+        
+        <main role="main" class="main-content" id="main-content">
+          <div class="titleCont">
+            <h1 class="title">Portfolio Website</h1>
+            <div class="textbox type-jss">
+              <p class="text-jss">
+                "Hello! Welcome to my portfolio!!"
+              </p>
+            </div>
+          </div><!-- end titleCont -->
+      
+          <div class="main-retrotext">
+            <h1>Ji-hyun's 8-bit Dreams</h1>
+            <p>
+              64k ram system 1996917<br/>
+              ready<br/>
+              C:> DIR<br/>
+              SYSTEM CHECK: ALL SYSTEMS GO<br/>
+              LOADING... PLEASE WAIT<br/>
+              C:> RUN PORTFOLIO.EXE<br/>
+              BOOTING SECTOR... COMPLETE<br/>
+              COMMAND PROMPT READY<br/>
+              C:> LOAD ART.ASM<br/>
+              COMPILING...<br/>
+              DISPLAYING VINTAGE DESIGN<br/>
+              C:> TYPE README.TXT<br/>
+              LOAD "PIXEL_ART",8,1<br/>
+              C:> EDIT DESIGN.CFG<br/>
+              FILE TRANSFER COMPLETE<br/>
+            </p>
+          </div>
+          <div class="main-profile-pic">
+            <div class="gradient"></div>
+            <div class="tree"></div>
+            <div class="lines"></div>
+          </div>
+        </main>
+      
+      </div><!-- end main page -->
+    </div>
+
+    <div id="intro-enter-wrap">
+      <div id="intro-enter">
+        <img class="earth" src="./img/earth.png" alt="earth">
+        <div class="intro-title"><!-- page1 -->
+          <div class="rotatingHeader">
+              <h1 data-splitting>hello!</h1>
+          </div>
+          <div class="rotatingHeader">
+              <h1 data-splitting>My&nbsp;name&nbsp;is</h1>
+          </div>
+          <div class="rotatingHeader">
+              <h1 data-splitting>Sim <em>Ji-hyun</em></h1>
+          </div>
+          <div class="rotatingHeader">
+              <h1 data-splitting>Let <em>me</em> introduce</h1>
+          </div>
+          <div class="rotatingHeader">
+              <h1 data-splitting>About <em class="highlight">ME!</em></h1>
+          </div>
+        </div>
+
+        <img class="smile" src="./img/smile.png" alt="smile">
+
+        <div class="star ori1"></div>
+        <div class="star ori2"></div>
+        <div class="star ori3"></div>
+        <div class="star dif1"></div>
+        <div class="star dif2"></div>
+      </div>
+    </div><!-- end intro-enter -->
+
+    <div id="intro">
+      <div class="intro-main-profile">
+        <img class="introImg" src="./img/프로필사진.png" alt="selfie">
+      </div>
+
+      <div class="intro-inner">
+        <div class="greeting greet_content">
+          <h1 class="text-anim">
+            <div>✧ About me</div>
+          </h1>
+
+          <h2>
+            <p>
+              안녕하세요! 저는 웹 퍼블리셔 심지현입니다.<br/>
+              최신 웹 기술과 디자인 트렌드에 관심이 많으며, 사용자 경험을 고려하여 웹 사이트를 만드는 것을 중요하게 생각합니다.<br/>
+              프로젝트를 통해 실무 경험을 쌓았으며, 다양한 문제를 해결하고 최적의 솔루션을 찾기 위해 끊임없이 배우고 있습니다.<br/>
+              새로운 기회를 통해 더 많은 경험을 쌓고 성장하고자 합니다.
+            </p>
+          </h2>
+        </div>
+
+        <div class="EducationEx">
+          <h1 class="text-anim">            
+            <div>✧ Experience · Edu</div>
+          </h1>
+
+          <div class="intro-flex eduex-info">
+            <ul class="date">
+              <li>2015. 03 - 2020. 08</li>
+              <li>2020. 11 - 2021. 01</li>
+              <li>2023. 12 - 2024. 01</li>
+              <li>2024. 02 - 2024. 07</li>
+            </ul>
+            <ul class="exper">
+              <li>동서대학교 시각 디자인과 졸업</li>
+              <li>음악단체 로고/명함/무대 삽화/프로그램 북 디자인 의뢰</li>
+              <li>(주)채정 프랜차이즈. 디자인 팀 인턴(2개월)</li>
+              <li>그린컴퓨터 웹 퍼블리셔 양성과정 수료</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="Certifications">
+          <h1 class="text-anim">
+            <div>✧ Certifications</div>
+          </h1>
+
+          <div class="intro-flex certifi-info">
+            <ul class="date">
+              <li>2022. 03</li>
+              <li>2022. 06</li>
+              <li>2023. 08</li>
+            </ul>
+            <ul class="exper">
+              <li>사회복지사 2급 자격증</li>
+              <li>자동차 운전면허 2종 보통</li>
+              <li>컴퓨터 활용능력 2급</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+      <img src="img/stars-bg.png" alt="bg" id="bg">
+      <img src="img/moon.png" alt="moon" id="moon">
+      <img src="img/planet.png" alt="land" id="land">
+    </div><!-- end intro -->
+  
+    <div class="section1">
+      <div class="rotate3d">
+        <div class="canvas-cont">
+          <canvas id="canvas3d"></canvas>
+        </div>
+      </div>
+    </div><!-- end section1 -->
+
+    <div class="parallel">
+      <div class="cover">
+        <div class="first-parallel"></div>
+      </div>
+      <div class="cover">
+        <div class="second-parallel"></div>
+      </div>
+    </div><!-- end parallel -->
+    
+    <section class="section2 purple-grid">
+      <div class="vertical-line">
+        <div class="flower"></div>
+      </div>
+
+      <div data-splitting class="hobby headline headline--jog">
+        <h2>About<br>My Hobby</h2>
+      </div>
+
+      <div class="badge-parent badge-right">
+        <img src="img/badge.svg" loading="lazy" alt="" class="badge">
+      </div><!-- end badge-parent-right -->
+      <div class="badge-parent badge-left">
+        <img src="img/badge2.svg" loading="lazy" alt="" class="badge2">
+      </div><!-- end badge-parent-left -->
+
+      <div class="hobbyinner">
+        
+        <div id="cube">
+          <div class="cube_inner">
+          </div><!-- end cube_inner -->
+
+          <div class="cubeitem project-1">
+            <div class="cube-container">
+              <div class="cubee cb1">
+                <div class="cSide cFront">
+                  <img src="./img/nailart_purple.png" alt="네일아트1">
+                </div>
+                <div class="cSide cBack">
+                  <img src="./img/nailart_purple2.jpg" alt="네일아트2">
+                </div>
+                <div class="cSide cTop">
+                  <img src="./img/nailart_purple3.jpg" alt="네일아트3">
+                </div>
+                <div class="cSide cBottom">
+                  <img src="./img/nailart_pink.jpg" alt="네일아트4">
+                </div>
+              </div>
+              <div class="cubee" style="left:50%">
+                <div class="cSide cFront">
+                  <img src="./img/nailart_green.jpg" alt="네일아트-green">
+                </div>
+                <div class="cSide cBack">
+                  <img src="./img/nailart_blue.jpg" alt="네일아트-blue">
+                </div>
+                <div class="cSide cTop">
+                  <img src="./img/nailart_halloween.jpg" alt="네일아트-halloween">
+                </div>
+                <div class="cSide cBottom">
+                  <img src="./img/nailart_red.jpg" alt="네일아트-red">
+                </div>
+              </div>
+            </div><!-- end cube-container -->
+          </div>
+
+          <div class="cubeitem project-2">
+            <div class="cube-container">
+              <div class="cubee cb1">
+                <div class="cSide cFront">
+                  <img src="./img/diary1-1.png" alt="diary1">
+                </div>
+                <div class="cSide cBack">
+                  <img src="./img/diary2-1.png" alt="diary2">
+                </div>
+                <div class="cSide cTop">
+                  <img src="./img/diary4-1.png" alt="diary4">
+                </div>
+                <div class="cSide cBottom">
+                  <img src="./img/diary3-1.png" alt="diary3">
+                </div>
+              </div>
+              <div class="cubee" style="left:50%">
+                <div class="cSide cFront">
+                  <img src="./img/diary1-2.png" alt="diary1">
+                </div>
+                <div class="cSide cBack">
+                  <img src="./img/diary2-2.png" alt="diary2">
+                </div>
+                <div class="cSide cTop">
+                  <img src="./img/diary3-2.png" alt="diary3">
+                </div>
+                <div class="cSide cBottom">
+                  <img src="./img/diary4-2.png" alt="diary4">
+                </div>
+              </div>
+            </div><!-- end cube-container -->
+          </div>
+
+          <div class="cubeitem project-3">
+            <div class="cube-container">
+              <div class="cubee cb1">
+                <div class="cSide cFront">
+                  <img src="./img/sticker_apple.jpg" alt="스티커북-사과">
+                </div>
+                <div class="cSide cBack">
+                  <img src="./img/sticker_banana.jpg" alt="스티커북-바나나">
+                </div>
+                <div class="cSide cTop">
+                  <img src="./img/sticker_cupcake.jpg" alt="스티커북-컵케이크">
+                </div>
+                <div class="cSide cBottom">
+                  <img src="./img/sticker_icecream.gif" alt="스티커북-아이스크림">
+                </div>
+              </div>
+              <div class="cubee" style="left:50%">
+                <div class="cSide cFront">
+                  <img src="./img/resinart.jpg" alt="레진아트1">
+                </div>
+                <div class="cSide cBack">
+                  <img src="./img/resinart2.png" alt="레진아트2">
+                </div>
+                <div class="cSide cTop">
+                  <img src="./img/resinart3.png" alt="레진아트3">
+                </div>
+                <div class="cSide cBottom">
+                  <img src="./img/resinart4.jpg" alt="레진아트4">
+                </div>
+              </div>
+            </div><!-- end cube-container -->
+          </div>
+
+          <div class="cubeitem project-4">
+            <div class="cube-container">
+              <div class="cubee cb1">
+                <div class="cSide cFront">
+                  <img src="./img/쇼팽탱고_ticket.jpg" alt="쇼팽탱고">
+                </div>
+                <div class="cSide cBack">
+                  <img src="./img/피아노콘체르토_ticket.jpg" alt="피아노콘체르토">
+                </div>
+                <div class="cSide cTop">
+                  <img src="./img/미술관옆콘서트홀_ticket.jpg" alt="미술관옆콘서트홀">
+                </div>
+                <div class="cSide cBottom">
+                  <img src="./img/오페라떼_ticket.jpg" alt="오페라떼">
+                </div>
+              </div>
+              <div class="cubee" style="left:50%">
+                <div class="cSide cFront">
+                  <img src="./img/쇼팽탱고_stage.png" alt="쇼팽탱고">
+                </div>
+                <div class="cSide cBack">
+                  <img src="./img/피아노콘체르토_stage.jpg" alt="쇼팽탱고">
+                </div>
+                <div class="cSide cTop">
+                  <img src="./img/오페라떼_stage.jpg.png" alt="오페라떼">
+                </div>
+                <div class="cSide cBottom">
+                  <img src="./img/미술관옆콘서트홀_stage.jpg" alt="미술관옆콘서트홀">
+                </div>
+              </div>
+            </div><!-- end cube-container -->
+          </div>
+          <div style="height: 100xp;"></div>
+        </div>
+
+    </section>
+
+    <div class="textpath-wrap purple-grid">
+      <div class="textpath_svg">
+        <!-- hobby.css -->
+        <svg viewBox="0 0 1800 600" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="Vector_1" d="M-1250 304C-1192.02 274.068 -356 -104 202 182C293.63 228.965 330 272 438 287.859C555.816 305.159 581.419 203.698 741.728 216.229C798.496 216.94 908 268 964 362C987.333 393.333 1051.6 461.2 1162 410C1224.67 381.333 1354 338 1524 436C1678 524.776 1898 362 1852 93.9998" stroke="black"/>
+            </defs>
+            <text>
+                <textPath href="#Vector_1" id="textOnPath1" class="text-on-path" startOffset="100%">Web portfolio. This is skill I have. Enjoy the web page!</textPath>
+                
+            </text>
+        </svg>    
+  
+      </div><!-- end textpath_svg -->
+    </div>
+
+    <section class="section3 skillpage purple-grid" id="section3">
+
+      <div id="svgWrap">
+        <svg id="svg" width="3087" height="1072" viewBox="0 0 3087 1072" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Desktop - 2" clip-path="url(#clip0_89_72)">
+          <circle id="endpoint" cx="2999" cy="656" r="22" fill="white"/>
+          <path id="Vector 4" class="theLine" d="M-53 89C-29.7513 132.778 72 214.86 218.397 192.652C315.921 177.859 509.157 106.607 613.323 260.13C645.931 329.872 706.529 396.716 874.644 430.41C943.635 439.618 1103.54 452.51 1191.22 430.41C1238.62 417.73 1358.34 407.313 1457.97 467.093C1530.44 523.701 1683.41 454 1817 598C1971 764 2227 654 2309 544C2529.37 326.897 2622 554 2826 660C2902 699.49 2934 832 2858 954" stroke="white" stroke-width="2"/>
+        
+          <text id="point" class="text1" x="298" y="225" style="fill: white">Illustrator <tspan x="315" y="250" dy="0">100%</tspan></text>
+          <text id="point2" class="text2" x="488" y="247" style="fill: white">Photoshop <tspan x="520" y="273" dy="0">95%</tspan></text>
+          <text id="point3" class="text3" x="680" y="430" style="fill: white">InDesign <tspan x="700" y="455" dy="0">95%</tspan></text>
+          <text id="point4" class="text4" x="899" y="498" style="fill: white">After Effect <tspan x="935" y="525" dy="0">80%</tspan></text>
+          <text id="point5" class="text5" x="1150" y="488" style="fill: white;">Premiere Pro <tspan x="1185" y="515" dy="0">85%</tspan></text>
+          <text id="point6" class="text6" x="1430" y="530" style="fill: white;">HTML <tspan x="1430" y="560" dy="0">100%</tspan></text>
+          <text id="point7" class="text7" x="1670" y="585" style="fill: white;">CSS <tspan x="1672" y="612" dy="0">95%</tspan></text>
+          <text id="point8" class="text8" x="1841" y="720" style="fill: white;">Java Script <tspan x="1875" y="748" dy="0">70%</tspan></text>
+          <text id="point9" class="text9" x="2084" y="730" style="fill: white;">SCSS <tspan x="2090" y="755" dy="0">60%</tspan></text>
+          <text id="point10" class="text10" x="2270" y="635" style="fill: white;">PHP <tspan x="2270" y="660" dy="0">65%</tspan></text>
+          <text id="point11" class="text11" x="2480" y="530" style="fill: white;">React <tspan x="2488" y="555" dy="0">50%</tspan></text>
+          <text id="point12" class="text12" x="2690" y="650" style="fill: white;">Github <tspan x="2700" y="675" dy="0">60%</tspan></text>
+        
+        
+          <rect id="github"  class="img" x="2709.44" y="546" width="60" height="60" transform="rotate(28.2935 2709.44 546)" fill="url(#pattern0_89_72)"/>
+          <rect id="react" class="img"  x="2482.71" y="434" width="60" height="60" transform="rotate(7.37912 2482.71 434)" fill="url(#pattern1_89_72)"/>
+          <rect id="php"  class="img" x="2248" y="560.067" width="60" height="60" transform="rotate(-36.9497 2248 560.067)" fill="url(#pattern2_89_72)"/>
+          <rect id="scss"  class="img" x="2069" y="649.43" width="60" height="60" transform="rotate(-13.916 2069 649.43)" fill="url(#pattern3_89_72)"/>
+          <rect id="javasc"  class="img" x="1877.34" y="620" width="61" height="61" transform="rotate(21.482 1877.34 620)" fill="url(#pattern4_89_72)"/>
+          <rect id="html"  class="img" x="1439.17" y="434.917" width="60" height="60" transform="rotate(14.731 1439.17 434.917)" fill="url(#pattern5_89_72)"/>
+          <rect id="css"  class="img" x="1665.57" y="493" width="60" height="60" transform="rotate(6.28459 1665.57 493)" fill="url(#pattern6_89_72)"/>
+          <rect id="premierepro"  class="img" x="1170" y="402.459" width="60" height="60" transform="rotate(-4.26169 1170 402.459)" fill="url(#pattern7_89_72)"/>
+          <rect id="aftereffect" class="img"  x="932.492" y="404" width="60" height="60" transform="rotate(8.13701 932.492 404)" fill="url(#pattern8_89_72)"/>
+          <rect id="indesign"  class="img" x="700.64" y="333.102" width="60" height="60" transform="rotate(15.9998 700.64 333.102)" fill="url(#pattern9_89_72)"/>
+          <rect id="photoshop"  class="img" x="527.016" y="149.891" width="60" height="60" transform="rotate(21.6383 527.016 149.891)" fill="url(#pattern10_89_72)"/>
+          <rect id="illust"  class="img" x="295" y="145.024" width="60" height="60" transform="rotate(-9.617 295 145.024)" fill="url(#pattern11_89_72)"/>
+          </g>
+        
+          <defs>
+          <pattern id="pattern0_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern1_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image1_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern2_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image2_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern3_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image3_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern4_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image4_89_72" transform="scale(0.0163934)"/>
+          </pattern>
+          <pattern id="pattern5_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image5_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern6_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image6_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern7_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image7_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern8_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image8_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern9_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image9_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern10_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image10_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <pattern id="pattern11_89_72" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image11_89_72" transform="scale(0.0166667)"/>
+          </pattern>
+          <clipPath id="clip0_89_72">
+          <rect width="3087" height="1072" fill="white"/>
+          </clipPath>
+        
+        
+          <image id="image0_89_72" data-name="github.png" width="60" height="60" xlink:href="./img/skillicon/github.png"/>
+          <image id="image1_89_72"  data-name="react.png" width="60" height="60" xlink:href="./img/skillicon/react.png"/>
+          <image id="image2_89_72"  data-name="php.png" width="60" height="60" xlink:href="./img/skillicon/php.png"/>
+          <image id="image3_89_72"  data-name="scss.png" width="60" height="60" xlink:href="./img/skillicon/scss.png"/>
+          <image id="image4_89_72"  data-name="javasc.png" width="61" height="61" xlink:href="./img/skillicon/javasc.png"/>
+          <image id="image5_89_72"  data-name="html.png" width="60" height="60" xlink:href="./img/skillicon/html.png"/>
+          <image id="image6_89_72"  data-name="css.png" width="60" height="60" xlink:href="./img/skillicon/css.png"/>
+          <image id="image7_89_72"  data-name="premierepro.png" width="60" height="60" xlink:href="./img/skillicon/premierepro.png"/>
+          <image id="image8_89_72"  data-name="aftereffect.png" width="60" height="60" xlink:href="./img/skillicon/aftereffect.png"/>
+          <image id="image9_89_72"  data-name="indesign.png" width="60" height="60" xlink:href="./img/skillicon/indesign.png"/>
+          <image id="image10_89_72"  data-name="photoshop.png" width="60" height="60" xlink:href="./img/skillicon/photoshop.png"/>
+          <image id="image11_89_72"  data-name="illust.png" width="60" height="60" xlink:href="./img/skillicon/illust.png"/>
+          </svg>
+      </div>
+
+      <div class="section3_wave_connection">
+        <img src="./img/section3_wave.svg" alt="wave">
+      </div>
+    </section><!-- end section3 -->
+
+    <div class="section_hero" id="project">
+      <div class="gradient_root"></div>
+      <div class="hero-title">
+        <h2 class="content__title" data-splitting data-effect21>
+          <span class="font-20">check</span>
+          <span class="font-18">MY BEST WEB&3D</span>
+          <span class="font-18">PROJECT</span>
+        </h2>
+      </div>
+
+      <section class="section-card" >
+        <div class="cards">
+          <div class="cards_item">
+            <div class="cards_el">
+              <div class="card_textbox bg1">
+                <h2 class="cards_el-title">
+                  Flip Scroll
+                </h2>
+                <p class="card_description">
+                  GSAP의 Flip속성을 이용하여 여러 가지 애니메이션을 만들었습니다.<br/>자연스러운 움직임과 동적인 인터랙션을 통해 시각적으로 매력적인 경험을 제공한 웹사이트입니다.
+                </p>
+
+                <button class="up card_btn_color1"><a href="https://flipscroll917.netlify.app" target="_blank">Visit Site</a></button>
+              </div>
+              <div class="card_video_wrap">
+                <video src="./video/flipscroll_record.mp4"autoplay musted loop></video>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards_item">
+            <div class="cards_el">
+              <div class="card_textbox bg2">
+                <h2 class="cards_el-title">
+                  3D Cyberfiction
+                </h2>
+                <p class="card_description">
+                  동영상을 프레임 단위로 잘라서, 사용자가 스크롤하는 속도에 따라 동적인 변화를 주었습니다. 이러한 동적인 변화는 웹사이트 방문자에게 몰입감을 제공해줄 수 있습니다.
+                </p>
+
+                <button class="up card_btn_color2"><a href="https://3dcyberfiction917.netlify.app" target="_blank">Visit Site</a></button>
+              </div>
+              <div class="card_video_wrap">
+                <video src="./video/3d_cyberfiction.mp4" autoplay musted loop></video>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards_item">
+            <div class="cards_el">
+              <div class="card_textbox bg3">
+                <h2 class="cards_el-title">
+                  Magma
+                </h2>
+                <p class="card_description">
+                  locomotive 라이브러리를 사용하여 프레임 단위로 자른 영상을 스크롤 했을 때 조금 더 부드럽게 구현될 수 있도록 하였습니다. 다음 센션이 어떤 애니메이션이 올라올지 방문자에게 재미를 더할 수 있습니다.
+                </p>
+
+                <button class="up card_btn_color3"><a href="https://magma917.netlify.app" target="_blank">Visit Site</a></button>
+              </div>
+              <div class="card_video_wrap">
+                <video src="./video/magma.mp4" autoplay musted loop></video>
+              </div>
+            </div>
+          </div>
+          
+          <div class="cards_item">
+            <div class="cards_el">
+              <div class="card_textbox bg4">
+                <h2 class="cards_el-title">
+                  Parallax Effect
+                </h2>
+                <p class="card_description">
+                  이 웹사이트는 Parallax 기법을 사용하여 스크롤할 때마다 배경 이미지와 콘텐츠가 서로 다른 속도로 이동하는 애니메이션을 주었습니다.<br/> 이를 통해 웹페이지에 깊이와 생동감을 더해 사용자에게 다채로운 시각적 경험을 제공할 수 있습니다.
+                </p>
+
+                <button class="up card_btn_color4"><a href="https://parallexeffect917.netlify.app" target="_blank">Visit Site</a></button>
+              </div>
+              <div class="card_video_wrap">
+                <video src="./video/parallax.mp4" autoplay musted loop></video>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards_item">
+            <div class="cards_el">
+              <div class="card_textbox bg5">
+                <h2 class="cards_el-title">
+                  Demonslayer
+                </h2>
+                <p class="card_description">
+                  CSS와 JavaScript를 활용하여 사용자가 스크롤을 내릴 때 이미지가 동적으로 움직이도록 구현했습니다. 이렇게 함으로써 웹페이지에 재미를 더하고, 사용자가 더 오래 머무를 수 있도록 효과를 주었습니다.
+                </p>
+
+                <button class="up card_btn_color5"><a href="https://demon-slayer917.netlify.app" target="_blank">Visit Site</a></button>
+              </div>
+              <div class="card_video_wrap">
+                <video src="./video/demonslayer.mp4" autoplay musted loop></video>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="end-anim"></div>
+      </section>
+    </div>
+
+    <section class="section4 carousel">
+      <div class="longline"></div>
+
+      <div class="list">
+        <div class="project-item">
+            <figure>
+                <img class="pc_screen" src="./img/pc_screen.png" alt="screen">
+                <div class="video-container2">
+                  <video src="./video/voyalab.mp4" autoplay muted loop></video>
+                </div>
+            </figure>
+            <figure class="figure-tablet">
+              <img src="./img/tablet.png" alt="tablet">
+              <div class="tab-scroll-wrap">
+                <div class="tab-scroll t-voyalabs"></div>
+              </div>
+            </figure>
+            <figure class="figure-mobile">
+              <img src="./img/mobile_shadow.png" alt="mobile">
+              <div class="mobile-scroll-wrap">
+                <div class="mobile-scroll m-voyalabs"></div>
+              </div>
+            </figure>
+
+            <div class="content">
+                <p class="category">
+                    Voyalabs 
+                </p>
+                <p class="description">
+                    <!-- 20 -->
+                    웹사이트 'Voyalabs'는 JavaScript로 동적인 커서 모양을 구현하고 lottiefiles 애니메이션을 사용해 시각적으로 흥미로운 정보를 제공하며,<br/>
+                    특정 영역에 도달하면 배경 테마가 바뀌는 효과를 적용했습니다.<br/>이러한 요소들을 통해 사용자 경험을 향상시킬 수 있습니다.
+                </p>
+                <div class="more">
+                  <button class="listbtn">
+                    <a href="https://voyalab917.netlify.app" target="_blank">Visit Site</a>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <figure>
+              <img class="pc_screen" src="./img/pc_screen.png" alt="screen">
+              <div class="video-container2">
+                <video src="./video/sushi.mp4"autoplay muted loop></video>
+              </div>
+            </figure>
+            <figure class="figure-tablet">
+              <img src="./img/tablet.png" alt="tablet">
+              <div class="tab-scroll-wrap">
+                <div class="tab-scroll t-sushi"></div>
+              </div>
+            </figure>
+            <figure class="figure-mobile">
+              <img src="./img/mobile_shadow.png" alt="mobile">
+              <div class="mobile-scroll-wrap">
+                <div class="mobile-scroll m-sushi"></div>
+              </div>
+            </figure>
+
+            <div class="content">
+                <p class="category">
+                    Sushi
+                </p>
+                <p class="description">
+                    <!-- 20 -->
+                    웹 사이트 'Sushi'는 GSAP의 ScrollTrigger기능을 활용하여 스크롤 시 전체 레이아웃이 조금씩 움직이며 정렬되는 효과와 CSS 변수값을 사용하여 배경테마를 동적으로 적용해보았습니다. 이를 통해 웹 페이지의 시각적 효과를<br/>부여하여 사용자에게 흥미로운 경험을 줄 수 있습니다.
+                </p>
+                <div class="more">
+                  <button class="listbtn">
+                    <a href="https://sushi917.netlify.app" target="_blank">Visit Site</a>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <figure>
+              <img class="pc_screen" src="./img/pc_screen.png" alt="screen">
+              <div class="video-container2">
+                <video src="./video/musign.mp4" autoplay muted loop></video>
+              </div>
+            </figure>
+            <figure class="figure-tablet">
+              <img src="./img/tablet.png" alt="tablet">
+              <div class="tab-scroll-wrap">
+                <div class="tab-scroll t-musign"></div>
+              </div>
+            </figure>
+            <figure class="figure-mobile">
+              <img src="./img/mobile_shadow.png" alt="mobile">
+              <div class="mobile-scroll-wrap">
+                <div class="mobile-scroll m-musign"></div>
+              </div>
+            </figure>
+
+            <div class="content">
+                <p class="category">
+                    Musign
+                </p>
+                <p class="description">
+                    <!-- 20 -->
+                    웹사이트 'Musign'은 J-Query를 사용하여 애니메이션 효과를 구현하였으며,<br/>메뉴 화면이 자연스럽게 나타나도록 했습니다. SVG로 직접 제작한 원형 애니메이션이 특정 영역에 도달하면 실행되며, CSS 변수와 J-Query를 활용하여 테마 색상도 동적으로 변경할 수 있습니다.
+                </p>
+                <div class="more">
+                  <button class="listbtn">
+                    <a href="https://musign917.netlify.app" target="_blank">Visit Site</a>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <figure>
+              <img class="pc_screen" src="./img/pc_screen.png" alt="screen">
+              <div class="video-container2">
+                <video src="./video/responsive.mp4" autoplay muted loop></video>
+              </div>
+            </figure>
+            <figure class="figure-tablet">
+              <img src="./img/tablet.png" alt="tablet">
+              <div class="tab-scroll-wrap">
+                <div class="tab-scroll t-responsive"></div>
+              </div>
+            </figure>
+            <figure class="figure-mobile">
+              <img src="./img/mobile_shadow.png" alt="mobile">
+              <div class="mobile-scroll-wrap">
+                <div class="mobile-scroll m-responsive"></div>
+              </div>
+            </figure>
+
+            <div class="content">
+                <p class="category">
+                    Responsive
+                </p>
+                <p class="description">
+                    <!-- 20 -->
+                    웹사이트 'Responsive'는 HTML, CSS, J-Query로 애니메이션을 구현한<br/>예제로, 메뉴에는 toggle 효과와 슬라이드에는 Slick.js를 사용했습니다.<br/>이러한 과정을 통해 반응형 페이지를 만드는 방법을 배웠으며 기본 웹 기술을 활용해 세련된 디자인과 유용한 기능을 제공하는 웹사이트를 완성했습니다.
+                </p>
+                <div class="more">
+                  <button class="listbtn">
+                    <a href="https://responsive917.netlify.app" target="_blank">Visit Site</a>
+                  </button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="arrows">
+          <button id="prev"><i class="fas fa-angle-left"></i></button>
+          <button id="next"><i class="fas fa-chevron-right"></i></i></button>
+      </div>
+      <div class="indicators">
+          <div class="number">02</div>
+          <ul>
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+      </div>
+    </section>
+
+    <section class="section5"> 
+      <span class="big_circle"></span>
+      <div class="section5-inner">
+        <div class="bottom">
+          <div class="bottom-box">
+            <span class="ring"></span>
+            <span class="ring"></span>
+            <span class="ring"></span>
+            <span class="ring svg-text">
+              <a href="https://figma917.netlify.app"target="_blank">
+                <div class="svg svg-one">
+                  <svg
+                    height="320px"
+                    viewBox="0 0 150 150"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="txt1"
+                      fill="none"
+                      d="M0 1H219"
+                    ></path>
+                    <text
+                      dominant-baseline="hanging"
+                      textLength="145"
+                      font-family="Cafe24ClassicType-Regular"
+                      font-size="25px"
+                    >
+                      <textPath href="#txt1">Figma Web</textPath>
+                    </text>
+                  </svg>
+                </div>
+                <div class="svg svg-two">
+                  <svg
+                    height="300px"
+                    viewBox="0 0 150 150"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="txt1"
+                      fill="none"
+                      d="M0 1H219"
+                    ></path>
+                    <text
+                      dominant-baseline="hanging"
+                      textLength="145"
+                      font-family="Noto Sans, sans-serif"
+                      font-size="12px"
+                    >
+                      <textPath href="#txt1">click me!</textPath>
+                    </text>
+                  </svg>
+                </div>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="todonot_click"></div>
+        <div class="figma-web-wrap">
+          <div class="figma-web">
+            <img class="sec5Img" id="imgone" src="img/sign-up.png" alt="/sign-up">
+            <img class="sec5Img" id="imgtwo" src="img/sign-in.png" alt="sign-in">
+            <img class="sec5Img" id="imgthree" src="img/welcome.png" alt="welcome">
+            <img class="sec5Img" id="imgfour" src="img/shop.png" alt="shop">
+            <img class="sec5Img" id="imgfive" src="img/shop-categories.png" alt="categories">
+          </div>
+        </div>
+      </div>
+    </section><!-- section5 -->
+
+    <section class="section6">
+      <div id="app" class="sec6_container">
+        <card data-image="./img/naver.png">
+          <h1 slot="header">
+            <a href="https://naverlogin917.netlify.app" target="_blank">NAVER</a>
+          </h1>
+          <p slot="content">input태그를 가지고 네이버의 로그인 페이지를 만든 예제입니다.<br/>Java Script에서 미입력 또는 잘못된 정보를 입력시 에러 메세지가 뜨도록 설정하였습니다.</p>
+        </card>
+
+        <card data-image="./img/todolist.png">
+          <h1 slot="header">
+            <a href="https://todolist917.netlify.app" target="_blank">Todo List</a>
+          </h1>
+          <p slot="content">React를 사용하여 할 일 리스트를 작성할 수 있는 공간을 구현했습니다. <br/>이 공간에서는 리스트를 추가 및 삭제할 수 있는 기능을 제공하며, 다크모드와 라이트모드를 전환할 수 있습니다.</p>
+        </card>
+
+        <card data-image="./img/zara.png">
+          <h1 slot="header">
+            <a href="https://reactshop917.netlify.app" target="_blank">Shop</a>
+          </h1>
+          <p slot="content">React와 React Bootstrap을 사용하여 홈쇼핑 웹페이지를 구현한 예제입니다. React Bootstrap의 디자인 코드를 사용하여 카드 이미지를 구현했고, 필터 기능을 통해 검색 시 카테고리별로 결과를 보여줍니다.</p>
+        </card>
+
+        <card data-image="./img/hanabank_webpage_ss.png">
+          <h1 slot="header">
+            <a href="https://hanacard917.netlify.app" target="_blank">Hanacard</a>
+          </h1>
+          <p slot="content">하나은행 웹 페이지 디자인을 참고하여 제작한 예제입니다.
+            이 예제를 통해 CSS와 JavaScript에 대한 이해를 높일 수 있었습니다. 웹사이트를 실제로 만들어보면서 실무적인 경험을 쌓았고, 이를 통해 웹 개발 역량을 크게 향상시킬 수 있었습니다.</p>
+        </card>
+
+        <card data-image="./img/Arrow.png">
+          <h1 slot="header">
+            <a href="https://arrow917.netlify.app" target="_blank">Arrow</a>
+          </h1>
+          <p slot="content">많은 화살표 오브젝트가 마우스 포인터의 위치에 따라 움직이는 효과를 JavaScript로 구현했습니다.<br/>이를 통해 웹 페이지에 재미있는 요소를 추가하여 사용자 경험을 향상시킬 수 있습니다.</p>
+        </card>
+
+        <card data-image="./img/3d_keyboard.png">
+          <h1 slot="header">
+            <a href="https://my.spline.design/untitled-dd2a64ca7f4459ee64604050300246e3/" target="_blank">3D Keyboard</a>
+          </h1>
+          <p slot="content">Spline 3D 프로그램을 사용하여 사용자가 특정 키를 누르면 3D 화면에서 버튼이 눌러지는 상호작용을 구현했습니다.</p>
+        </card>
+        
+        <card data-image="./img/3d_room.png">
+          <h1 slot="header">
+            <a href="https://app.spline.design/file/a288689e-b787-4193-8d32-209083089cab" target="_blank">3d Room</a>
+          </h1>
+          <p slot="content">Spline 3D 프로그램을 사용하여 컬러 버튼을 클릭하면 방의 테마가 바뀌는 효과를 구현했습니다.<br/>3D 오브젝트를 활용하면 제품을 소개하는 웹페이지에서 사용자의 관심을 더욱 효과적으로 끌 수 있습니다.</p>
+        </card>
+
+        <card data-image="./img/logo_mockup.png">
+          <h1 slot="header">J Art Logo</h1>
+          <p slot="content">J Art 음악단체의 의뢰로 제작한 로고입니다. 로고에는 기독교의 십자가와 음악의 음표를 결합하여 'J'를 형상화했습니다.
+          </p>
+        </card>
+
+        <card data-image="./img/동백이2.png">
+          <h1 slot="header">DongBaek Character</h1>
+          <p slot="content">이 작품은 제 졸업 작품으로 만든 동백 캐릭터입니다. 부산의 온천을 주제로, 잊혀진 전통 문화를 현대적으로 재해석하여 만들었습니다. 기생의 이미지를 현대의 아이돌처럼 캐릭터화하여 새로운 느낌을 주었습니다.</p>
+        </card>
+
+        <card data-image="./img/캣퍼스라이프.png">
+          <h1 slot="header">Catpus Character</h1>
+          <p slot="content">이 로고와 캐릭터는 조별 과제로 제작한 캣퍼스 라이프 프로젝트입니다.<br/>대학 생활을 고양이 캐릭터로 비유하여 웹툰 형식으로 재미있게 표현했습니다.</p>
+        </card>
+      </div>
+    </section>
+    
+    <section class="section7">
+      <div class="svg-container"> <!-- 1006 645 -->
+        <svg viewBox="0 0 980 645" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="Vector 1" d="M1 644V43C1 43 181 0.999974 508 0.999969C835 0.999965 980 43 980 43V644H1Z" fill="#B3E2A7"/>
+        </svg><!-- end svg -->
+
+        <div class="anime-list">  
+          <h1 class="sec7_tit_text">HOVER ON ME<span>PICK ME UP</span></h1>
+          <h1 class="sec7_tit_text">I LOVE DESIGN<span>MY FAVORITE</span></h1>
+          <h1 class="sec7_tit_text">WANNA BE<span>CHECK MORE</span></h1>
+          <h1 class="sec7_tit_text">WEB DESIGNER<span>ABOUT MY LIFE</span></h1>
+
+          <ul>
+            <li>
+              <div class="index"><span>01</span></div>
+              <div class="anime-name">
+                <h2 data-value="Animal Lover!">Animal Lover!</h2>
+              </div>
+              
+              <div class="redirect-link">
+                <a href="https://www.imdb.com/title/tt2560140/" target="_blank">
+                  <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z" fill="currentColor"></path>
+                    <path d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z" fill="currentColor"></path>
+                    <path d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </div>
+                <div class="hover-img">
+                  <img src="./img/parrot.jpg" alt="parrot-img" class="img-fluid">
+                </div>
+            </li>
+            <li>
+              <div class="index"><span>02</span></div>
+              <div class="anime-name">
+                <h2 data-value="Passionate Painter!">Passionate Painter!</h2>
+              </div>
+              <div class="redirect-link">
+                <a href="https://www.imdb.com/title/tt2560140/" target="_blank">
+                  <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z" fill="currentColor"></path>
+                    <path d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z" fill="currentColor"></path>
+                    <path d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z" fill="currentColor"></path>
+                      </svg>
+                </a>
+              </div>
+                <div class="hover-img">
+                  <img src="./img/oil_paint.jpg" alt="anime-img" class="img-fluid">
+                </div>
+            </li>
+            <li>
+              <div class="index"><span>03</span></div>
+              <div class="anime-name">
+                <h2 data-value="Family Time on Weekends!">Family Time on Weekends!</h2>
+              </div>
+              <div class="redirect-link">
+                <a href="https://www.imdb.com/title/tt2560140/" target="_blank">
+                  <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z" fill="currentColor"></path>
+                    <path d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z" fill="currentColor"></path>
+                    <path d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z" fill="currentColor"></path>
+                      </svg>
+                </a>
+              </div>
+                <div class="hover-img">
+                  <img src="./img/family_fieldtrip.jpg" alt="anime-img" class="img-fluid">
+                </div>
+            </li>
+            <li>
+              <div class="index"><span>04</span></div>
+              <div class="anime-name">
+                <h2 data-value="I love to Crafting!">I love to Crafting!</h2>
+              </div>
+              
+              <div class="redirect-link">
+                <a href="https://www.imdb.com/title/tt2560140/" target="_blank">
+                  <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z" fill="currentColor"></path>
+                    <path d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z" fill="currentColor"></path>
+                    <path d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z" fill="currentColor"></path>
+                      </svg>
+                </a>
+              </div>
+                <div class="hover-img">
+                  <img src="./img/minihouse.png" alt="anime-img" class="img-fluid">
+                </div>
+            </li>
+            <li>
+              <div class="index"><span>05</span></div>
+              <div class="anime-name">
+                <h2 data-value="Sketching the Character!">Sketching the Character!</h2>
+              </div>
+              <div class="redirect-link">
+                <a href="https://www.imdb.com/title/tt2560140/" target="_blank">
+                  <svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" fill="none" name="iconArrow" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z" fill="currentColor"></path>
+                    <path d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z" fill="currentColor"></path>
+                    <path d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </div>
+                <div class="hover-img">
+                  <img src="./img/drawing.jpg" alt="drawing" class="img-fluid">
+                </div>
+            </li>
+          </ul>
+        </div><!-- end anime-list -->
+      </div><!-- end svg-container(section svg) -->
+    </section>
+      
+    <footer class="footer" id="contact">
+      <div class="bubbles">
+        <div class="bubble" style="--size:5.669397912279656rem; --distance:6.487000442139074rem; --position:28.83842473658379%; --time:3.995264215917518s; --delay:-3.1839707253111915s;"></div>
+        <div class="bubble" style="--size:4.539004703224771rem; --distance:7.24669622299973rem; --position:48.991799581660146%; --time:2.3315320238515196s; --delay:-3.1530332009944777s;"></div>
+        <div class="bubble" style="--size:4.774863735643107rem; --distance:6.116921017837597rem; --position:46.23113075366314%; --time:2.1885043162688067s; --delay:-2.5265334066907386s;"></div>
+        <div class="bubble" style="--size:3.844560707519104rem; --distance:7.666466414573792rem; --position:56.42033969014952%; --time:2.754247789144736s; --delay:-3.8807821560444777s;"></div>
+        <div class="bubble" style="--size:2.7312444429459335rem; --distance:7.9797967090662265rem; --position:88.65143884440282%; --time:3.0083954691232226s; --delay:-3.5728398726285513s;"></div>
+        <div class="bubble" style="--size:4.417524730738218rem; --distance:8.906807381451486rem; --position:7.383062355816829%; --time:2.176684543743045s; --delay:-2.127787614326252s;"></div>
+        <div class="bubble" style="--size:2.775011642596165rem; --distance:6.052047793915419rem; --position:49.25446306417739%; --time:3.791123293648233s; --delay:-3.338852689018018s;"></div>
+        <div class="bubble" style="--size:2.192168836135151rem; --distance:7.547071822108219rem; --position:88.81402943373048%; --time:3.7728746791630496s; --delay:-3.3330811430760803s;"></div>
+        <div class="bubble" style="--size:2.4711286246980873rem; --distance:8.733999301658457rem; --position:76.36050532001407%; --time:3.482944889408579s; --delay:-2.172747871447953s;"></div>
+        <div class="bubble" style="--size:5.280857313806234rem; --distance:6.08899057347607rem; --position:85.42526157807478%; --time:2.107997620540259s; --delay:-2.4816443640940755s;"></div>
+        <div class="bubble" style="--size:5.015885802800927rem; --distance:7.92606712858882rem; --position:63.93548503511401%; --time:2.450648041924371s; --delay:-3.9866455565588383s;"></div>
+        <div class="bubble" style="--size:3.9649518619195785rem; --distance:9.720209802704879rem; --position:49.02833729339334%; --time:2.7493474001536145s; --delay:-2.3759384325579354s;"></div>
+        <div class="bubble" style="--size:2.1322676679371995rem; --distance:6.923444277493924rem; --position:82.52380811428023%; --time:2.637643487391256s; --delay:-2.3600616989513314s;"></div>
+        <div class="bubble" style="--size:4.268729366230456rem; --distance:6.836782713725212rem; --position:79.94200369231496%; --time:2.4608933430783164s; --delay:-3.711204801077979s;"></div>
+        <div class="bubble" style="--size:2.9087676328999983rem; --distance:8.217477047427842rem; --position:69.5602633109758%; --time:3.1092173285588793s; --delay:-2.4375615348013646s;"></div>
+        <div class="bubble" style="--size:3.9390443747526556rem; --distance:9.255374707771939rem; --position:75.63960436302051%; --time:3.507356326105473s; --delay:-3.5632504702161256s;"></div>
+        <div class="bubble" style="--size:4.227203619456289rem; --distance:8.831436611045913rem; --position:44.296101495772064%; --time:2.8366116700692308s; --delay:-2.1585092673982884s;"></div>
+        <div class="bubble" style="--size:5.002990125539258rem; --distance:9.889750563621055rem; --position:19.240050349576176%; --time:2.2725007259042775s; --delay:-3.959390610710319s;"></div>
+        <div class="bubble" style="--size:5.598480817643017rem; --distance:9.535059449718865rem; --position:46.13367076012971%; --time:3.9515026630414134s; --delay:-3.598924221833384s;"></div>
+        <div class="bubble" style="--size:2.850505357709575rem; --distance:9.70722965805998rem; --position:-2.0236867327200225%; --time:3.576938422829926s; --delay:-3.961345244406832s;"></div>
+        <div class="bubble" style="--size:3.421653941566423rem; --distance:8.144199447327878rem; --position:74.82009715516122%; --time:3.4949554350583836s; --delay:-2.5052474198823536s;"></div>
+        <div class="bubble" style="--size:3.7225587699747775rem; --distance:7.179410647476862rem; --position:29.70329052201909%; --time:2.6300435765794172s; --delay:-2.594743799673818s;"></div>
+        <div class="bubble" style="--size:2.2317171438020997rem; --distance:6.027562743455384rem; --position:25.11190788430205%; --time:2.010306900855218s; --delay:-3.104768226085812s;"></div>
+        <div class="bubble" style="--size:5.214966896884722rem; --distance:7.490933000578402rem; --position:90.12840798926328%; --time:2.6539094017197185s; --delay:-3.6381669933897594s;"></div>
+        <div class="bubble" style="--size:3.102424510888558rem; --distance:7.031071109436684rem; --position:14.514447222878054%; --time:2.7006910342288935s; --delay:-2.1424060825957345s;"></div>
+        <div class="bubble" style="--size:3.466603320721881rem; --distance:9.10942961443135rem; --position:-2.2072330348644598%; --time:2.7397360969784867s; --delay:-3.415711929905162s;"></div>
+        <div class="bubble" style="--size:5.763205102190557rem; --distance:6.152461670685455rem; --position:78.69239636980434%; --time:2.710213081851641s; --delay:-3.3248360620140884s;"></div>
+        <div class="bubble" style="--size:2.0321540561476237rem; --distance:9.931196361795426rem; --position:66.07786774108145%; --time:2.648507369624828s; --delay:-3.863842987436324s;"></div>
+        <div class="bubble" style="--size:2.299500314020392rem; --distance:8.275610171451643rem; --position:64.3431431569285%; --time:2.5078905688148465s; --delay:-3.476119127658936s;"></div>
+        <div class="bubble" style="--size:4.98765862504854rem; --distance:6.223560358473319rem; --position:24.379829804306155%; --time:2.5767154728558084s; --delay:-2.179213072632891s;"></div>
+        <div class="bubble" style="--size:4.974192562459404rem; --distance:8.07174500123403rem; --position:60.37841439253495%; --time:3.328116824208451s; --delay:-2.1551561672415382s;"></div>
+        <div class="bubble" style="--size:2.0199898395534683rem; --distance:6.03807404815178rem; --position:47.72004511958543%; --time:2.4591920991391607s; --delay:-3.5005096200910835s;"></div>
+        <div class="bubble" style="--size:5.6356048928264775rem; --distance:7.036893566845309rem; --position:59.6106548393161%; --time:2.375853512531439s; --delay:-2.1226557883976764s;"></div>
+        <div class="bubble" style="--size:4.511326132468367rem; --distance:8.267024155910057rem; --position:99.97513950184785%; --time:3.448034252977647s; --delay:-2.5766174838420937s;"></div>
+        <div class="bubble" style="--size:4.003785820050639rem; --distance:7.60364803545836rem; --position:6.533125449158042%; --time:3.6524001806572777s; --delay:-2.3896603516437804s;"></div>
+        <div class="bubble" style="--size:3.2715877052431477rem; --distance:9.770628247061605rem; --position:73.99765733174753%; --time:3.9485525487786943s; --delay:-3.4072785326966617s;"></div>
+        <div class="bubble" style="--size:3.4002089888579166rem; --distance:7.500228669024978rem; --position:60.712284966538505%; --time:2.9252506629689075s; --delay:-2.282224367020384s;"></div>
+        <div class="bubble" style="--size:4.564686757181628rem; --distance:6.70664724153025rem; --position:47.50974470282599%; --time:3.478926399958069s; --delay:-3.973045404962474s;"></div>
+        <div class="bubble" style="--size:5.9334219591453925rem; --distance:9.6998190506727rem; --position:68.89256249645553%; --time:2.4378204656822526s; --delay:-2.6422356979813673s;"></div>
+        <div class="bubble" style="--size:2.3225524399513287rem; --distance:6.870428772914602rem; --position:47.78726083969365%; --time:3.777694865039132s; --delay:-3.04371145068642s;"></div>
+        <div class="bubble" style="--size:5.177435720870536rem; --distance:9.120319622454051rem; --position:73.25076107164848%; --time:3.284727772577713s; --delay:-3.4961094091890828s;"></div>
+        <div class="bubble" style="--size:4.2018130256036rem; --distance:9.540975484919166rem; --position:-2.261799006551486%; --time:2.605938830700726s; --delay:-3.4478928917253824s;"></div>
+        <div class="bubble" style="--size:2.9973415342383696rem; --distance:9.647342413537952rem; --position:76.99403939999063%; --time:2.179441274417591s; --delay:-2.1224450241186763s;"></div>
+        <div class="bubble" style="--size:4.262284058283695rem; --distance:8.537217253852296rem; --position:9.005193449963688%; --time:2.283901131418366s; --delay:-3.380204368747832s;"></div>
+        <div class="bubble" style="--size:5.184959112042713rem; --distance:8.706065100244869rem; --position:16.716545376200827%; --time:3.833942045474632s; --delay:-2.099459607676945s;"></div>
+        <div class="bubble" style="--size:2.485219465628168rem; --distance:7.11729637573453rem; --position:68.72690253927246%; --time:2.450636347504439s; --delay:-3.5370553345606757s;"></div>
+        <div class="bubble" style="--size:5.9067578447895155rem; --distance:6.188677882115247rem; --position:16.664046574528864%; --time:3.8479647216818686s; --delay:-3.6109628834145617s;"></div>
+        <div class="bubble" style="--size:5.3029665683702385rem; --distance:9.724296068867908rem; --position:20.858275945758244%; --time:3.7956357520313975s; --delay:-3.823042438029358s;"></div>
+        <div class="bubble" style="--size:2.555543987081312rem; --distance:6.353304319633505rem; --position:16.01250321369627%; --time:2.077405258613664s; --delay:-2.1734536134065725s;"></div>
+        <div class="bubble" style="--size:3.006038367233069rem; --distance:8.132337507160866rem; --position:15.725353553134859%; --time:2.896263073180733s; --delay:-3.294102645618991s;"></div>
+        <div class="bubble" style="--size:3.2775585779342844rem; --distance:7.139470928434537rem; --position:61.84237672461616%; --time:3.912619866149692s; --delay:-3.147638318806388s;"></div>
+        <div class="bubble" style="--size:5.47302900338667rem; --distance:9.060234452900902rem; --position:68.58411023198093%; --time:3.960284607893725s; --delay:-3.191431709719686s;"></div>
+        <div class="bubble" style="--size:2.4728481698065066rem; --distance:7.496916698399494rem; --position:4.582607473219799%; --time:3.3474573846651774s; --delay:-2.141842283380825s;"></div>
+        <div class="bubble" style="--size:5.499692621904201rem; --distance:7.921352250807903rem; --position:81.92490313116828%; --time:2.335307980247974s; --delay:-2.3720414184222727s;"></div>
+        <div class="bubble" style="--size:5.280715384545536rem; --distance:8.332331857037499rem; --position:36.03410863219914%; --time:2.338495226024494s; --delay:-3.5677837696920074s;"></div>
+        <div class="bubble" style="--size:5.579602254370271rem; --distance:8.783538161896917rem; --position:18.94663828344397%; --time:2.80647871144707s; --delay:-2.071626269882215s;"></div>
+        <div class="bubble" style="--size:4.044368708094385rem; --distance:8.470466177690259rem; --position:69.63227465870538%; --time:2.2094493297762323s; --delay:-2.0157903930903824s;"></div>
+        <div class="bubble" style="--size:2.778676586455192rem; --distance:9.300134124043357rem; --position:18.644297350600436%; --time:2.668008969815007s; --delay:-2.570350449090395s;"></div>
+        <div class="bubble" style="--size:5.55926704275335rem; --distance:8.189994407604523rem; --position:63.19816395009656%; --time:3.1615024862838337s; --delay:-3.652144396104041s;"></div>
+        <div class="bubble" style="--size:3.129965334229026rem; --distance:9.367539548647207rem; --position:66.88417247895961%; --time:3.4072048112938824s; --delay:-2.5327256539760983s;"></div>
+        <div class="bubble" style="--size:2.242052076985966rem; --distance:9.57606586735334rem; --position:95.48558486243692%; --time:2.318079983538633s; --delay:-2.2941302999817483s;"></div>
+        <div class="bubble" style="--size:3.11042656378355rem; --distance:7.699250725036166rem; --position:33.22424167108604%; --time:3.2815593632401745s; --delay:-2.411549277904527s;"></div>
+        <div class="bubble" style="--size:4.367082133609326rem; --distance:9.881260089031539rem; --position:73.1349091554334%; --time:3.6111568245525936s; --delay:-2.308109369700642s;"></div>
+        <div class="bubble" style="--size:4.6500006929539826rem; --distance:6.434577743012718rem; --position:85.31486766594732%; --time:2.3266586961126006s; --delay:-3.395344802625266s;"></div>
+        <div class="bubble" style="--size:3.423960114977353rem; --distance:8.705574677971029rem; --position:61.490369643517596%; --time:2.5473326310567384s; --delay:-3.195187155421834s;"></div>
+        <div class="bubble" style="--size:2.6114177588898073rem; --distance:7.545926029173618rem; --position:94.90021522411159%; --time:2.1939047746102847s; --delay:-2.902546289528788s;"></div>
+        <div class="bubble" style="--size:5.695531144424325rem; --distance:9.032654935628585rem; --position:10.385168282767761%; --time:3.918314952701968s; --delay:-2.2576157960449272s;"></div>
+        <div class="bubble" style="--size:3.7511752348072553rem; --distance:8.090823093858017rem; --position:102.17372482420689%; --time:3.668261924021955s; --delay:-3.6499876974537377s;"></div>
+        <div class="bubble" style="--size:5.845631570828122rem; --distance:8.094548052417677rem; --position:-2.237867007828802%; --time:3.7564125961610464s; --delay:-3.2020701164242054s;"></div>
+        <div class="bubble" style="--size:3.5518317713741867rem; --distance:7.17770371181072rem; --position:0.9220261849653859%; --time:2.628220102745733s; --delay:-3.438111757588976s;"></div>
+        <div class="bubble" style="--size:5.755034968602722rem; --distance:8.245193377074838rem; --position:89.24072632394189%; --time:2.155913419173942s; --delay:-2.1005741995537632s;"></div>
+        <div class="bubble" style="--size:4.243961603777157rem; --distance:8.806699367023477rem; --position:81.38688270622627%; --time:3.6361319234409524s; --delay:-3.5129990221994523s;"></div>
+        <div class="bubble" style="--size:5.832418869274291rem; --distance:9.142582412457209rem; --position:35.50915863089602%; --time:3.601817215263909s; --delay:-2.1583224600668545s;"></div>
+        <div class="bubble" style="--size:5.519476995721601rem; --distance:6.270078130448217rem; --position:9.253681893145353%; --time:2.6698704714459693s; --delay:-2.185129734804547s;"></div>
+        <div class="bubble" style="--size:5.939998504042093rem; --distance:9.818351804782152rem; --position:-4.242997864559581%; --time:2.8667344110353925s; --delay:-3.859753729071537s;"></div>
+        <div class="bubble" style="--size:2.574332066322916rem; --distance:6.392718233048882rem; --position:30.782452528788596%; --time:2.6010124744247536s; --delay:-3.2934529130748214s;"></div>
+        <div class="bubble" style="--size:5.83356767191071rem; --distance:8.047219670985122rem; --position:104.95321979248433%; --time:3.8874338990675295s; --delay:-2.9043051573791705s;"></div>
+        <div class="bubble" style="--size:5.363636864732596rem; --distance:9.017028044117758rem; --position:74.3310243021839%; --time:2.675727412071966s; --delay:-3.87462496857197s;"></div>
+        <div class="bubble" style="--size:2.7661917368286506rem; --distance:9.257078197853176rem; --position:95.36376521911345%; --time:3.829296309295122s; --delay:-3.2064844610672107s;"></div>
+        <div class="bubble" style="--size:4.917090317189576rem; --distance:6.961646611482162rem; --position:18.275596628657013%; --time:3.9149887550117835s; --delay:-3.5108819029465113s;"></div>
+        <div class="bubble" style="--size:2.7781577216774727rem; --distance:6.847199809863009rem; --position:29.481390443210053%; --time:2.987914108162556s; --delay:-3.558159568569983s;"></div>
+        <div class="bubble" style="--size:2.912805802021703rem; --distance:8.961710573337564rem; --position:12.420304462742777%; --time:2.4833711766160604s; --delay:-2.3555088572500558s;"></div>
+        <div class="bubble" style="--size:3.7525374302045336rem; --distance:9.587014064609747rem; --position:87.05386269229152%; --time:3.197480599318471s; --delay:-3.4081289724225843s;"></div>
+        <div class="bubble" style="--size:2.8517756983197273rem; --distance:8.072200309719864rem; --position:6.814539764360514%; --time:3.228786232563332s; --delay:-2.6961681537012483s;"></div>
+        <div class="bubble" style="--size:5.054503931025793rem; --distance:6.444730054753101rem; --position:87.5612418174447%; --time:2.0977053117158726s; --delay:-3.3374785043771245s;"></div>
+        <div class="bubble" style="--size:3.575583821904135rem; --distance:6.3397678627699525rem; --position:30.289254803664832%; --time:3.445888517935825s; --delay:-2.01625368851276s;"></div>
+        <div class="bubble" style="--size:3.732020776482102rem; --distance:9.191763223207865rem; --position:66.1885372506043%; --time:3.9889275054305062s; --delay:-2.2508763029668506s;"></div>
+        <div class="bubble" style="--size:2.3561366950381455rem; --distance:8.39568456917713rem; --position:90.8538466226361%; --time:3.700970798702966s; --delay:-2.9582060538702706s;"></div>
+        <div class="bubble" style="--size:3.283288928200866rem; --distance:8.09147580967465rem; --position:96.79008429095728%; --time:3.7285079248307635s; --delay:-2.5204325795875935s;"></div>
+        <div class="bubble" style="--size:2.8362434695553445rem; --distance:6.881158499951842rem; --position:70.11956693232781%; --time:2.837255890172534s; --delay:-3.8312172520337593s;"></div>
+        <div class="bubble" style="--size:2.2946007616455253rem; --distance:7.26543505538898rem; --position:68.47921016027917%; --time:2.274847947829512s; --delay:-2.9217510203163712s;"></div>
+        <div class="bubble" style="--size:2.8537570842747746rem; --distance:6.516947452543273rem; --position:37.48788838635387%; --time:3.343415953222633s; --delay:-2.1034545341138378s;"></div>
+        <div class="bubble" style="--size:2.741012829620563rem; --distance:9.917369292867136rem; --position:-0.8319622625446073%; --time:2.412729926237205s; --delay:-3.9484588541106262s;"></div>
+        <div class="bubble" style="--size:4.67250890792116rem; --distance:9.616725782087007rem; --position:3.77331112076687%; --time:3.3714383510874613s; --delay:-2.5610437357742364s;"></div>
+        <div class="bubble" style="--size:5.638618947038466rem; --distance:8.483335111070236rem; --position:65.30883452503505%; --time:3.06665103675306s; --delay:-2.8823154827373365s;"></div>
+        <div class="bubble" style="--size:5.622912942853923rem; --distance:9.572898603222193rem; --position:4.152470773803984%; --time:2.2471706702110605s; --delay:-3.0370439424385665s;"></div>
+        <div class="bubble" style="--size:3.730974178459988rem; --distance:6.919859798007179rem; --position:29.422102181484092%; --time:3.1971359140930136s; --delay:-2.8557907684490553s;"></div>
+        <div class="bubble" style="--size:3.7367566145716706rem; --distance:7.056712748574901rem; --position:88.77182197827682%; --time:3.2767692161424673s; --delay:-3.302079647765149s;"></div>
+        <div class="bubble" style="--size:4.269050875675139rem; --distance:8.937713406178272rem; --position:18.9106919095964%; --time:3.825979562589143s; --delay:-3.9421105743796194s;"></div>
+        <div class="bubble" style="--size:4.3589337018086995rem; --distance:7.434846501298131rem; --position:31.104707218855687%; --time:3.974540460329923s; --delay:-2.2916313539581616s;"></div>
+        <div class="bubble" style="--size:3.660599089567693rem; --distance:6.958718989575034rem; --position:30.144000403739447%; --time:3.053759793227547s; --delay:-2.819441735543209s;"></div>
+        <div class="bubble" style="--size:3.8851983969038484rem; --distance:7.170315434473049rem; --position:14.946140301623686%; --time:3.8631485802704306s; --delay:-2.7337612192919796s;"></div>
+        <div class="bubble" style="--size:4.708137092660871rem; --distance:7.557689940620216rem; --position:24.580770141648355%; --time:3.4417156260668476s; --delay:-2.778347402800383s;"></div>
+        <div class="bubble" style="--size:2.290982622113691rem; --distance:7.726151524627597rem; --position:46.749885314682274%; --time:2.9638928002322866s; --delay:-3.0156685123733706s;"></div>
+        <div class="bubble" style="--size:3.1124180523919502rem; --distance:9.31923297302651rem; --position:8.409907857804503%; --time:2.187034097194316s; --delay:-2.9421373459705666s;"></div>
+        <div class="bubble" style="--size:3.2763210512368497rem; --distance:6.837757163950703rem; --position:-1.79332343884822%; --time:2.9888218161432443s; --delay:-3.624100854640259s;"></div>
+        <div class="bubble" style="--size:2.638295459871707rem; --distance:8.098887625026777rem; --position:30.665740841404805%; --time:2.3885447726913225s; --delay:-2.9606938588080896s;"></div>
+        <div class="bubble" style="--size:3.5985465888907724rem; --distance:9.043791231669433rem; --position:77.83517397439161%; --time:2.8636406478510508s; --delay:-2.3856298020707536s;"></div>
+        <div class="bubble" style="--size:2.44165337751987rem; --distance:7.763352091908289rem; --position:-0.3522808596618976%; --time:2.3889601936190825s; --delay:-2.422523987527452s;"></div>
+        <div class="bubble" style="--size:2.5332108251465435rem; --distance:6.88378962249715rem; --position:58.15319878591676%; --time:3.7587111698981457s; --delay:-3.456557700020196s;"></div>
+        <div class="bubble" style="--size:4.460791003080802rem; --distance:9.283395747063603rem; --position:88.97678666331736%; --time:2.071638824178034s; --delay:-2.517903940592472s;"></div>
+        <div class="bubble" style="--size:3.785578834177242rem; --distance:8.55606821850797rem; --position:3.750644312589701%; --time:2.349018718491045s; --delay:-3.9781910830810894s;"></div>
+        <div class="bubble" style="--size:3.6533464049715922rem; --distance:7.2121857878594575rem; --position:-0.26875372956899746%; --time:3.5905729653368286s; --delay:-2.2484900647388386s;"></div>
+        <div class="bubble" style="--size:4.733340491933816rem; --distance:9.676605393035551rem; --position:78.62102605152059%; --time:3.994562110498816s; --delay:-3.446041469236s;"></div>
+        <div class="bubble" style="--size:4.044949421153324rem; --distance:7.872953556783322rem; --position:22.036452005522023%; --time:2.1129003234893142s; --delay:-3.067161969842518s;"></div>
+        <div class="bubble" style="--size:3.392132222562994rem; --distance:6.686818199078463rem; --position:94.35677659608807%; --time:3.852382929837948s; --delay:-2.1551308873868797s;"></div>
+        <div class="bubble" style="--size:2.8385938618615825rem; --distance:9.447441091427134rem; --position:58.72981713522078%; --time:2.4369581929562067s; --delay:-3.4772308158375425s;"></div>
+        <div class="bubble" style="--size:2.9738181618201045rem; --distance:9.887923470851604rem; --position:-2.0482095887354657%; --time:3.188439464267798s; --delay:-3.3384969733443537s;"></div>
+        <div class="bubble" style="--size:3.0723678915284083rem; --distance:9.49180945855764rem; --position:3.1899415014765076%; --time:3.2283004087446714s; --delay:-3.54060633016809s;"></div>
+        <div class="bubble" style="--size:5.325203681091213rem; --distance:7.990663734306212rem; --position:47.821360821116905%; --time:2.8106432876452825s; --delay:-2.349926518186344s;"></div>
+        <div class="bubble" style="--size:5.860233180278735rem; --distance:6.554524408139207rem; --position:-3.8624081237391517%; --time:2.918203909296467s; --delay:-3.665286453478384s;"></div>
+        <div class="bubble" style="--size:5.920272041652516rem; --distance:8.363013135197757rem; --position:61.61967111353658%; --time:2.717310748883421s; --delay:-2.9153425003880544s;"></div>
+        <div class="bubble" style="--size:5.932536045726779rem; --distance:9.017529159028957rem; --position:53.753900111464176%; --time:3.6198023622499704s; --delay:-2.334379059400411s;"></div>
+        <div class="bubble" style="--size:2.15221830484196rem; --distance:8.521102670876239rem; --position:40.2355162146403%; --time:2.93313926405517s; --delay:-2.7384467727462076s;"></div>
+        <div class="bubble" style="--size:3.6043211507590494rem; --distance:6.632306606275625rem; --position:18.80154398814914%; --time:3.3060430812159343s; --delay:-3.4181664342136138s;"></div>
+        <div class="bubble" style="--size:2.3671293367302804rem; --distance:6.360733847944298rem; --position:71.38389901468415%; --time:3.4683432850310885s; --delay:-3.574103298868947s;"></div>
+        <div class="bubble" style="--size:2.4298221637479314rem; --distance:9.417025581576304rem; --position:55.59329780913745%; --time:3.1937953973922064s; --delay:-3.6610316646640264s;"></div>
+        <div class="bubble" style="--size:5.555318683099112rem; --distance:8.62624627167339rem; --position:13.071073522823138%; --time:3.0635614490330583s; --delay:-2.768315494485625s;"></div>
+      </div>
+
+      <div class="footer-content">
+
+        <div class="div-hide">
+          <div class="heading-large">Thank you for Watching</div>
+        </div>
+
+        <div class="footer-info">
+          <div class="svgWrap">
+            <svg width="1200" height="100">
+              <path d="M 10 50 Q 600 25 1190 50" fill="transparent"
+                stroke-width="2px" stroke="white"/>
+            </svg>
+          </div><!-- end svgWrap -->
+
+          <div class="footer-info-position email">
+            <h3>Email</h3>
+            <p>simsim2009@naver.com</p>
+          </div>
+          <div class="footer-info-position number">
+            <h3>Phone</h3>
+            <p>+82 10 3821 4730</p>
+          </div>
+          <div class="footer_linkicon">
+            <a href="https://github.com/love917" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/jihyun8820?igsh=MWUxaXc3amN4ZmVoaQ==" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="./img/kakaotalk_contact.png" target="_blank">
+              <img src="./img/kakaotalk.png" alt="kakaotalk">
+            </a>
+          </div>
+        </div>
+
+        <div class="footerbg">
+        </div>
+      </div><!-- end footer-content -->
+    </footer>
+    
+    <!-- blob filter -->
+    <svg style="position:fixed; top:100vh">
+      <defs>
+        <filter id="blob">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
+          <!--feComposite(in="SourceGraphic" in2="blob" operator="atop") //After reviewing this after years I can't remember why I added this but it isn't necessary for the blob effect-->
+        </filter>
+      </defs>
+    </svg>
+  </div>
+
+
+
+
+  <div class="ball"></div><!--  커서 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Include Splitting.js -->
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/MotionPathPlugin.min.js"></script>
+
+  <!-- lenis -->
+  <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+
+  <!-- lottie cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+  <!-- 자체 실행, hover 실행 -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- 라이브러리 -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js'></script>
+
+  <!-- 라이브러리(section6) -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+
+  <script src="https://unpkg.com/split-type"></script>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/project.js"></script>
+  <script type="module" src="./js/3d_module.js"></script>
+  <script type="module" src="./js/textani.js"></script>
+  <script src="./js/skillpage.js"></script>
+</body>
+
+</html>

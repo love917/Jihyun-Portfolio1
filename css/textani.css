@@ -1,0 +1,71 @@
+/* 🍒textani.js - intro inner 영역 텍스트 애니메이션 효과🍒 */
+.text-anim {
+  display: flex;
+  align-items: center;
+}
+.text-anim div {
+  display: inline-block;
+}
+/* 🍒//// textani.js 텍스트 애니메이션 ////🍒 */
+.greet_content{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+}
+.content__title {
+  font-size: 5vw;
+  line-height: 1.2; /* 텍스트가 겹치지 않도록 조정 */
+  counter-increment: section;
+  text-align: center; /* 왼쪽 정렬 */
+  display: inline-block; /* 인라인 블록으로 변경 */
+  gap: 2rem;
+  font-family: 'DOSGothic';
+
+}
+
+.content__title>span:nth-child(2)>span:nth-child(5){
+  color: #FF6347;
+}
+.splitting .word{
+  display: inline;/* 단어를 한 줄에 표시 */
+}
+.splitting .char{
+  display: inline-block; /* 글자를 한 줄에 표시 */
+  position: relative;
+}
+
+.splitting .char {
+  position: relative;
+}
+
+.splitting .font-sub .word {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.char-wrap {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.content__title--left {
+  text-align: left;
+}
+
+.content__title--right {
+  text-align: right;
+}
+
+.content__title--sides {
+  grid-template-rows: auto auto;
+  grid-template-columns: 100%;
+  text-align: left;
+  gap: 2rem;
+}
+
+.content__title--sides span:last-child {
+  justify-self: end;
+}
+em{font-style: normal;}

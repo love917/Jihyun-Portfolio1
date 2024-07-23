@@ -1,0 +1,718 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+@font-face {
+  font-family: 'Cafe24ClassicType-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DOSGothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+}
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+}
+@font-face {
+  font-family: 'CookieRun-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'KIMM_Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+}
+@font-face{
+  src: url(../font/Zolina-Bold.ttf);
+  font-family: z;
+}
+
+/* 
+font-family: "Noto Sans", sans-serif;
+font-family: "Kumar One", serif;
+*/
+
+*{margin: 0;padding: 0;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: #fff;}
+html{/* overflow-x: hidden; */ }
+body{
+  cursor: url(../img/cursor.png), auto;
+  background-color: #000;
+  font-family: "Galmuri11", sans-serif;
+  transition: 0.3s;
+  overflow-x: clip;
+}
+span{display: block;}
+:root {
+  --pc-screen-bg: #ababab;
+  --pc-screen-darkbg: #959595;
+  --pc-screen-lightbg: #d9d9d9;
+  --main-color:#A377EB;
+  --main-dark-color:#361a64;
+  --main-dark2-color:#231041;
+  --main-dark3-color:#180a2e;
+  --main-dark4-color:#0d051a;
+
+  /* use : section5-bg */
+  --gfs: 1440;
+}
+
+/* ************************************** */
+/* ############# 전체설정 ############# */
+.purple-grid{
+  background-color: var(--main-dark-color);
+  background-image: repeating-linear-gradient(to right, transparent 0 49px, #fff1 50px 51px), repeating-linear-gradient(to bottom, transparent 0 50px, #fff1 50px 51px);
+}
+
+#intro p{display: inline-block;font-weight: normal;font-size: 17px;line-height: 26px;}
+#intro-enter-wrap{height: 100vh;position: relative;}
+#intro{height: 100vh;}
+.section1{height: 100vh;}
+.section2{height: 445vh; position: relative;overflow: hidden;}
+.textpath-wrap{height: 59vh;}
+.section3{position: relative;}
+.section_hero{background-color: var(--pc-screen-lightbg);}
+.section4{height: 100vh;background-color: var(--pc-screen-lightbg); position: relative;}
+.section5{height: 200vh;background-color: var(--pc-screen-lightbg); position: relative;}
+.section6{height: 100vh;background-color: var(--pc-screen-lightbg);}
+.section7{height: 120vh;background-color: var(--pc-screen-lightbg);}
+.footer{height: 74vh;}
+
+.canvas-cont{background-color: #000;}
+.bgnoise{
+  /* 💙필요할 때 쓰기  <div class="bgnoise"></div> */
+  position: absolute;
+  top: 0;
+  background-color: #f1f1f1;/* 020202 f1f1f1*/
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/noise.gif);
+  background-blend-mode: soft-light;/* 칼라가 흰색이여야한다 */
+  overflow: clip;
+  z-index: -1 ;
+}
+
+/* ############# NAV ############# */
+#page1{
+  /* padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between; */
+
+  padding: 20px;
+  position: fixed;
+  left: 50%; top: 1rem;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 68px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px); 
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 500;
+}
+.menu{display: flex;gap: 20px;}
+#page1 .main-menu{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  cursor: pointer;
+  color: #fff;
+  z-index: 5;
+  box-sizing: border-box;
+  gap: 20px;
+}
+.mg-btn_rounded{
+  position: relative;
+  min-width:6rem;
+  height: 3rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-align: center;
+}
+.mg-btn .mg-btn_rounded-stoke{
+  position: absolute;
+  top: 0; left: 0; width: 100%;  height: 100%;
+  border-radius: 4rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: 0.6s;
+}
+.mg-btn:hover .mg-btn_rounded-stoke{
+  border-color: #000;
+ }
+ .mg-btn .mg-btn_rounded-fill{
+     position: absolute;
+     top: 1px; left: 1px;
+     width: 100%; 
+     height: 3rem;
+     border-radius: 4rem;
+     overflow: hidden;
+ 
+ }
+ .mg-btn .mg-btn_rounded-fill::before{
+     content: "";
+     position: absolute;
+     top: 0; left: 0; width: 100%; height: 100%;
+     background: linear-gradient(161deg, #ff32eb, #3321ff);
+     transition: 0.6s cubic-bezier(0.75, 0.06, 0.27, 0.99);
+     transform: scaleY(0);
+     transform-origin: center bottom;
+ }
+ .mg-btn:hover .mg-btn_rounded-fill::before{
+     transform: scaleY(1);
+ }
+ .mg-btn .mg-btn_rounded-text{display: block;overflow: hidden;}
+ 
+ .mg-btn .mg-btn_rounded-text .mg-btn_rounded-text-copy{
+     position: absolute; 
+     left: 0; width: 100%;
+     color: #000;
+     font-weight: bold;
+     transform: translateY(-150%) rotateX(180deg);
+     opacity: 0;
+     transition: 0.6s;
+ }
+ .mg-btn_rounded-text-copy a{}
+ .mg-btn:hover .mg-btn_rounded-text .mg-btn_rounded-text-copy{
+     transform: translateY(0%) rotateX(0deg);
+     opacity: 1;
+ }
+
+ .mg-btn .mg-btn_rounded-text .mg-btn_rounded-text-origin{
+     display: block; color: #fff;
+     transform: translateY(0) rotateX(0);
+     transition: 0.6s;
+     opacity: 1;
+ }
+ .mg-btn:hover .mg-btn_rounded-text .mg-btn_rounded-text-origin{
+     transform: translateY(150%) rotateX(180deg);
+     opacity: 0;
+ }
+
+/* clock */
+.time_box{
+  position: absolute;
+  top: 0px; left: 50%;
+  transform: translateX(-50%);
+  color: #17D4FE;
+
+  font-family: Orbitron;
+  display: flex;
+  margin-top:1.2rem;
+}
+.clock .time_box .txt_lg{font-size: 33px;width: 56px; display: inline-block;}
+.clock .time_box .txt_sm{font-size: 33px;width: 52px; display: inline-block;}
+.clock .time_box .mark,
+.clock .time_box .mark02{font-size: 33px;letter-spacing: 5px;
+  margin-left: 5px;}
+
+/* ############# MAIN ############# */
+/* textbox */
+.textbox{
+  width: 37vw; height: 50px;
+  font-family: "Galmuri7", sans-serif;
+  color: #d9d9d9;
+  font-size: 20px;
+  margin-top: 18px;
+}
+
+/* type-js */
+.main-content{
+  display: grid;
+  grid-template-columns: 1fr 65% 1fr;
+  grid-template-rows: 30vh repeat(4, 17vh);
+}
+.titleCont {
+  color: #d9d9d9;
+  grid-area: 2 / 2 / 1 / 3;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.titleCont h1{
+  transition: all 0.5s;
+  -webkit-text-stroke: 1px #d6f4f4;
+  font-variation-settings: "wght" 200, "ital" 1;
+  font-style: italic;
+  text-shadow: 10px 10px 0px #07bccc,
+    15px 15px 0px #e601c0,
+    20px 20px 0px #e9019a,
+    25px 25px 0px #f40468,
+    45px 45px 10px #290a2c;
+  cursor: pointer;
+
+  font-family: "Anton SC", sans-serif;
+  font-weight: bolder;
+  font-size: 90px;
+  line-height: 15vh;
+  color: transparent;
+}
+.titleCont h1:hover{
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+}
+.cursor {
+  display: block;
+  position: absolute;
+  height: 77%;
+  top: 9px; right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  -webkit-animation: flash 0.5s none infinite alternate;
+          animation: flash 0.5s none infinite alternate;
+}
+
+@-webkit-keyframes flash {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes flash {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.img-trail .trail_items .item img{width: 100%;}
+
+/* ############# intro-enter ############# */
+#intro-enter-wrap{
+  background: url(../img/stars-bg.png);}
+  #intro-enter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 70px;
+  }
+
+  #intro-enter .earth{width: 186px;height: 83px;margin-bottom: 20px;}
+  #intro-enter .smile{
+    width: 87px;height: 87px;
+    animation: bounce 2s infinite;
+  }
+  .intro-title {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    overflow:hidden;
+  }
+  .rotatingHeader{margin-bottom: 30px;}
+  .rotatingHeader h1{
+    font-family: z;
+    color:var(--pc-screen-lightbg);
+    font-size:40px;
+    margin:0;
+    padding:0;
+    line-height: 40px;
+    perspective:600px;
+  }
+  .rotatingHeader h1:nth-child(2){
+      color: #efefef;
+  }
+  .rotatingHeader h1 span{display: inline-block;}
+
+  /* star */
+  #intro-enter{position: relative;}
+  .star{
+    position: absolute;
+    width: 40px;height: 40px;
+    background: url("../img/Star.png") no-repeat center center;
+    background-size: 25px 25px;
+  }
+  #intro-enter .star.ori1{
+    top: 3%; left: 20%;
+    animation: twinkle2 1.5s infinite alternate;
+  }
+  #intro-enter .star.ori2{
+    top: 49%; left: 7%;
+    animation: twinkle 1.5s infinite alternate;
+  }
+  #intro-enter .star.ori3{
+    bottom: 3%; left: 23%;
+    animation: twinkle2 1.5s infinite alternate;
+  }
+  #intro-enter .star.dif1{
+    top: 10%; right: 25%;
+    animation: twinkle 1.5s infinite alternate;
+  }
+  #intro-enter .star.dif2{
+    bottom: 26%; right: 11%;
+    animation: twinkle2 1.5s infinite alternate;
+  }
+  @keyframes twinkle {
+    0% {opacity: 0.2; transform: scale(1);}
+    50% {opacity: 1; transform: scale(1.1);}
+    100% {opacity: 0.2; transform: scale(1);}
+  }
+  @keyframes twinkle2 {
+    0% {opacity: 0.2; transform: scale(1);}
+    30% {opacity: 1; transform: scale(1.1);}
+    60% {opacity: 0.2; transform: scale(1);}
+    100% {opacity: 1; transform: scale(1);}
+  }
+  
+  /* 통통 튀는 애니메이션 설정 */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-50px);
+    }
+    60% {
+      transform: translateY(-25px);
+    }
+  }
+
+/* ############# intro ############# */
+#intro {
+  position: relative; 
+  display: flex;
+  justify-content: center;   
+  height: 100vh; /* Make sure the intro section has a height */
+  background: url(../img/stars-bg.png);
+}
+/* intro-img */
+.intro-main-profile{
+  position: relative;
+  z-index: 20;
+  margin-right: 40px;
+  margin-top: 22px;
+}
+.introImg{width: 335px; height: 478px;}
+
+
+
+/* intro inner */
+#intro h1{font-family: z; display: flex; align-items: center;}
+#intro i{margin-right:10px; font-size: 18px;}
+#intro .intro-inner{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position:  relative;
+  z-index: 100;
+  color: var(--pc-screen-lightbg);
+  width: 623px;
+}
+#intro .intro-inner h2 span{font-weight: 100;font-size: 15px;}
+
+.intro-flex{
+  display: flex;
+  flex-direction: row;
+  line-height: 30px;
+}
+.eduex-info>.date{
+  font-family: 'NanumSquareRound';
+  text-align: start;
+  width: 200px;
+}
+.certifi-info>.date{
+  font-family: 'NanumSquareRound';
+  width: 125px;
+}
+
+/* background */
+#intro>img {
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the container */
+}
+
+#intro::before {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0; 
+  width: 100%; height: 100px;
+  z-index: 100;
+  background: linear-gradient(0deg, #000, transparent);
+}
+
+#intro img#moon{    
+  top: -93vh;
+  left: 19%;
+}
+
+/* canvas3d ------------------- */
+.rotate{width: 100vh;}
+.canvas3d{width: 100vh;}
+
+/* ############# section1 ############# */
+.section1{
+  height: 500vh;
+}
+.section1 .rotate3d{
+  position: sticky;
+  top:0;
+  left: 0;
+}
+
+
+/* ############# section2 ############# */
+.parallel{overflow: hidden;}
+.cover{
+  width: 100%;height: 30px;
+  display: flex;
+  font-family: z;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5rem; 
+  color: #fff;
+  background-color: var(--main-dark-color);
+  padding: 1.5rem 0;
+  position: relative;
+}
+.cover:nth-child(2){
+  background-color: #ECECEC;
+  justify-content: flex-end;
+  color:var(--main-dark-color);
+}
+.vertical-line{
+  width: 2px; height: 100px;
+  background-color: #d9d9d9;
+  margin-left: 30px;
+  position: relative;
+}
+.flower{
+  position: absolute;
+  top: 73px; right: -22px;
+  width: 50px; height: 50px;
+  background-image: url('../img/flower2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: spin 5s linear infinite; /* spin animation */
+}
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+/* ############# section3 page ############# */
+.section3{height: 200vh;}
+.section3 #svgWrap{
+  position: sticky;
+  top: 0; left: 0;
+}
+.skillpage svg {
+  overflow: visible;
+}
+
+#point {
+  fill: white;
+  visibility: hidden;
+}
+
+.theLine {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+}
+.skillpage text {
+  fill: white;
+  font-size: 20px;
+  /* visibility: hidden; */
+}
+ 
+#endpoint{
+  z-index: 10;
+  fill: white;
+  visibility: hidden;
+}
+
+#section3 #svg text{
+  visibility: hidden;
+}
+
+#section3 #svg .img{
+  position: relative;
+  z-index: 20;
+  visibility: hidden;
+}
+.section3_wave_connection{
+  width: 100%;
+  height: 128px;
+  position: absolute;
+  bottom: -50px;
+}
+/* ############# textpath ############# */
+
+.textpath_svg textpath{font-family: 'Cafe24ClassicType-Regular';}
+
+/* ############# section7 ############# */
+/* section7 섹션 설정 */
+.section7 {
+  position: relative;
+}
+.svg-container {
+  position: absolute;
+  top: -13vh;
+  right: 0;
+  left: 0;
+}
+.section7,.footer{background-color: #B3E2A7;}
+
+/* sec7_title */
+.sec7_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.sec7_tit_text {
+  font-size: 5rem;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 100%;
+  color: var(--main-dark-color);
+  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sec7_tit_text span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-dark-color);
+  color: var(--pc-screen-lightbg);
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec7_tit_text:hover > span {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+/* section7 컨텐츠 */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+  }
+
+.section7 a {
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.section7 .line{position: relative;}
+.anime-list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 8%;
+  z-index: 2;
+  padding: 60px 0 0;
+}
+.anime-list ul{margin-top: 7%;}
+.anime-list .title {
+    text-transform: uppercase;
+    margin: 0px auto 60px;
+    width: fit-content; /* 내 부모를 가득 채움 = w100% */
+    max-width: 1170px; 
+    text-align: center;
+}
+.anime-list ul li {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 26px 0px;
+    margin: 0px -12px;
+    opacity: 0.7;
+}
+.anime-list ul li:hover {opacity: 1;}
+.anime-list ul li>div:not(.hover-img){/* 클래스 명이 hover-img가 아닌 div */
+    padding: 0 12px;
+}
+.anime-list .index {
+    width: calc(100% / 12);/* 100을 12개로 나눈것을 index너비가 됨 */
+}
+.anime-list .release-year {
+    width: calc((100% / 12) * 2);
+}
+.anime-list .anime-name {
+    width: calc((100% / 12) * 4);
+    margin-right: 5rem;
+}
+.anime-list .genere {
+    width: calc((100% / 12) * 4);
+}
+/* .anime-list .redirect-link {
+    width: calc((100% / 12) * 1);
+}
+ */
+ .anime-name h2{text-align: center;}
+.anime-list ul li::before,
+.anime-list ul li::after {
+    content: "";
+    transition: all 1s;
+    position: absolute;
+    bottom: 0px; left: 50%;
+    transform: translateX(-50%);
+    width: 100%; height: 1px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+}
+.anime-list ul li::after {
+    opacity: 1;
+    width: 0%;
+}
+  .anime-list ul li:hover::after {
+    width: 60%;
+}
+.anime-list .redirect-link svg {
+    color: var(--black-color);
+  }
+
+/* 마우스 올리면 생기는 영역(사진) */
+.img-fluid{width: 100%;}
+.anime-list .hover-img{
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    top: 50%;left: 0%;
+    width: 20vw;
+    height: 20vw;
+}
+.anime-list .hover-img img{
+    transition: all 0.7s;
+    /* -webkit-transition: all 0.7s; */
+    opacity: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.anime-list li:hover .hover-img img{opacity: 1;}
