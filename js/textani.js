@@ -39,16 +39,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       );
     }
   }
-
-  function reset_animation(element) {
-    var textContainer = element.querySelector("div:nth-child(2)");
-    if (!textContainer) {
-      console.error("Text container not found");
-      return;
-    }
-    var originalText = Array.from(textContainer.querySelectorAll("div")).map(div => div.innerText).join('');
-    textContainer.innerHTML = originalText;
-  }
   
 ///////////////////////////////////////////
 (function () {

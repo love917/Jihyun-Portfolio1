@@ -233,7 +233,9 @@ span{display: block;}
   justify-self: center;
   text-align: center;
   margin-top: 4rem;
+  z-index: 5;
 }
+.main-profile-pic{z-index: 5;}
 
 .titleCont h1{
   transition: all 0.5s;
